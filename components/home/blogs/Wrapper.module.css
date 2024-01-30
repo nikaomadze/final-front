@@ -1,0 +1,147 @@
+.pager {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 15px 24px;
+
+    position: relative;
+    text-align: right;
+    margin-top: 80px;
+}
+
+.pager span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.pager button {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #333333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.prevButton {
+    float: left;
+}
+
+.blogWrapperSection {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+@media screen and (max-width: 1320px) {
+    .blogWrapperSection {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .blogWrapperSection {
+        column-gap: 4.494vw;
+        row-gap: 4.494vw;
+    }
+
+    .blog {
+        width: 42.5vw !important;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .blog h2 {
+        margin-bottom: 3.101vw !important;
+    }
+
+    .blog p {
+        font-size: 3.4vw !important;
+    }
+
+    .timeStamps {
+        margin: 2.326vw 0 !important;
+    }
+
+    .timeStamps span:nth-child(2) {
+        margin-left: 2.326vw !important;
+    }
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 395px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.blog .blogImgWrapper {
+    width: 100%;
+    height: 230px;
+    max-width: 395px;
+    max-height: 230px;
+}
+
+.blogImgWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timeStamps {
+    margin: 15px 0;
+}
+
+.timeStamps span {
+    color: #7f7f7f;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.timeStamps span:nth-child(2) {
+    margin-left: 15px;
+}
+
+.blog h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.1em;
+    color: #000;
+    font-weight: 700;
+}
+
+.blog p {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #000;
+}
+
+.nbErr {
+    font-size: 55px;
+    margin: 0 auto;
+    margin-left: 25px;
+}
+
+.nextBtnDisabled {
+    opacity: .8;
+    pointer-events: none;
+    user-select: none;
+}
+
+.nblwd {
+    width: 790px;
+}

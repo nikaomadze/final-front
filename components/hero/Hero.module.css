@@ -1,0 +1,28 @@
+.heroHeader {
+    text-transform: uppercase;
+    user-select: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 230px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.heroPar {
+    font-size: 20px;
+    line-height: 1.1em;
+    font-weight: 400;
+    color: #7f7f7f;
+    text-align: center;
+}
+
+@media screen and (max-width: 1220px) {
+    .heroHeader {
+        font-size: 18.8vw;
+        margin-top: 0;
+    }
+
+    .heroHeader {
+        font-size: 17.8vw;
+    }
+}
